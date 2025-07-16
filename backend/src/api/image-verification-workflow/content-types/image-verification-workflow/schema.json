@@ -1,0 +1,68 @@
+{
+  "kind": "collectionType",
+  "collectionName": "image_verification_workflows",
+  "info": {
+    "singularName": "image-verification-workflow",
+    "pluralName": "image-verification-workflows",
+    "displayName": "Image Verification Workflow"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Image": {
+      "type": "media",
+      "multiple": true,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "IsVerified": {
+      "type": "boolean"
+    },
+    "Owner": {
+      "type": "string"
+    },
+    "ImageDescription": {
+      "type": "text"
+    },
+    "UploadDate": {
+      "type": "date"
+    },
+    "PriorityValue": {
+      "type": "enumeration",
+      "enum": [
+        "One",
+        "Two",
+        "Three",
+        "Four",
+        "Five"
+      ]
+    },
+    "StageofVerification": {
+      "type": "enumeration",
+      "enum": [
+        "Pending",
+        "In-Review",
+        "Verified",
+        "Rejected"
+      ]
+    },
+    "ReasonForVerification": {
+      "type": "string"
+    },
+    "PendingReasonForVerification": {
+      "type": "string"
+    },
+    "ReasonForNonVerification": {
+      "type": "string"
+    },
+    "ImageUrl": {
+      "type": "string"
+    }
+  }
+}
